@@ -6,6 +6,7 @@ from app.models import Data
 env_name = os.getenv("FLASK_ENV", "development")
 app = create_app(env_name)
 
+# Use context manager to make database-related operations within the Flask application context
 with app.app_context():
     db.create_all()
 
