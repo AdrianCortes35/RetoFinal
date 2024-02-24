@@ -62,7 +62,11 @@ Instalación y Configuración
 
             DATABASE_URI=postgresql://user:admin@127.0.0.1:5432/db: Establece la variable de entorno DATABASE_URI con la cadena de conexión a la base de datos PostgreSQL.
 
-            python3 manage.py: Ejecuta el script manage.py utilizando Python. Crea las tablas en la base de datos y realiza otras tareas relacionadas con la configuración inicial de la aplicación.    
+            python3 manage.py: Ejecuta el script manage.py utilizando Python. Crea las tablas en la base de datos y realiza otras tareas relacionadas con la configuración inicial de la aplicación.  
+
+-Iniciar Aplicacion
+
+    python3 run.py
 
 -Tests
 
