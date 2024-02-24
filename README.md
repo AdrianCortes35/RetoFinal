@@ -1,6 +1,5 @@
 Instalación y Configuración
 
-
 -Clonar el Repositorio:
 
     git clone https://github.com/AdrianCortes35/RetoFinal.git
@@ -35,7 +34,9 @@ Instalación y Configuración
         sudo make-ssl-cert generate-default-snakeoil --force-overwrite
         sudo service postgresql restart
 
+
     Creacion de Usuario/BBDD de psql:
+
         #Change the user to postgres :
         sudo su - postgres
             
@@ -52,6 +53,7 @@ Instalación y Configuración
         alter user "user" with encrypted password 'admin';
         grant all privileges on database db to "user";
 
+
     Ejecutar manage.sh
 
         sh manage.sh
@@ -66,7 +68,7 @@ Instalación y Configuración
 
     Antes de los tests, ejecuta este comando para añadir el directorio actual a la variable de entorno PYTHONPATH.
 
-        export PYTHONPATH="$PYTHONPATH:$PWD"            
+        export PYTHONPATH="$PYTHONPATH:$PWD"
 
     Comando para ejecutar tests:
         
@@ -79,4 +81,10 @@ Instalación y Configuración
 
 -Git
 
-    Solo si funcionen los test con un minimo de coverage de 80% subir pull request al repositorio de Git
+    Subir cambios en una rama nueva
+
+    git add file
+    git commit -m "Comentario"
+    git push
+
+    SOLO si funcionen los test con un minimo de coverage de 80% subir pull request al repositorio de Git para juntar con main
