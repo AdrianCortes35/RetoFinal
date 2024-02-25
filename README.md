@@ -80,7 +80,7 @@ Instalación y Configuración
 
     Para ver Coverage (Min 80%)
 
-        coverage run -m pytest tests/prueba.py
+        coverage run -m pytest tests/tests_app.py
 	    coverage report -m
 
 -Git
